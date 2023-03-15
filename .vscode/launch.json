@@ -1,0 +1,45 @@
+{
+   // Use IntelliSense to learn about possible attributes.
+   // Hover to view descriptions of existing attributes.
+   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+   "version": "0.2.0",
+   "configurations": [
+      {
+         "type": "lldb",
+         "request": "launch",
+         "name": "Debug executable 'encryptor-rust'",
+         "cargo": {
+            "args": [
+               "build",
+               "--bin=encryptor-rust",
+               "--package=encryptor-rust"
+            ],
+            "filter": {
+               "name": "encryptor-rust",
+               "kind": "bin"
+            }
+         },
+         "args": ["<INPUT_FILE_PATH>","<PASSWORD>","<SALT_STRING>"],
+         "cwd": "${workspaceFolder}"
+      },
+      {
+         "type": "lldb",
+         "request": "launch",
+         "name": "Debug unit tests in executable 'encryptor-rust'",
+         "cargo": {
+            "args": [
+               "test",
+               "--no-run",
+               "--bin=encryptor-rust",
+               "--package=encryptor-rust"
+            ],
+            "filter": {
+               "name": "encryptor-rust",
+               "kind": "bin"
+            }
+         },
+         "args": [],
+         "cwd": "${workspaceFolder}"
+      }
+   ]
+}
