@@ -5,6 +5,8 @@ NOTES
 [1] It is often a random or pseudo-random number issued in an authentication protocol to ensure that old communications cannot be reused in replay attacks.
 https://en.wikipedia.org/wiki/Cryptographic_nonce
 
+IV - https://en.wikipedia.org/wiki/Initialization_vector
+
 ### LINKS
 > https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html
 
